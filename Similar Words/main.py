@@ -1,17 +1,17 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-# def print_hi(name):
-#     # Use a breakpoint in the code line below to debug your script.
-#     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
 from collections import defaultdict
 
 
-# compares two words to determine if they're similar
+
+'''
+Given a list of words, group words that are similar into a group, return the groups of words.
+Similar is defined as each letter in word1 maps one-to-one to a letter in word2.
+
+If two words have a different length, then they are not similar
+'''
+
+
+
+# Compares two words to determine if they're similar
 def compare(word1, word2):
     m1 = [-1] * 26
     m2 = [-1] * 26
