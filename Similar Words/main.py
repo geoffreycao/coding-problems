@@ -31,15 +31,18 @@ def compare(word1, word2):
 
 
 
-
+# Uses compare() to compare all words in a pairwise fashion, O(n^2)
 def similar(words):
 
     d = defaultdict(list)
+
+    # 'seen' hashset keeps track of which words we have already visited
     seen = set()
 
     for i in range(len(words)):
         word1 = words[i]
 
+        # starting at i, and not i + 1, as we still need to add each word to its own entry (a list) in the dictionary
         for j in range(i, len(words)):
             word2 = words[j]
             if word2 in seen:
