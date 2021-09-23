@@ -28,7 +28,7 @@ def verify() -> bool:
 
     for input, output in zip(inputs, outputs):
         result = main.similar(input)
-        print(f"result: {result}")
+        print(f"calculated output:\n{result}\nAnswer:\n{output}\n")
         for i in range(len(result)):
             r_words = result[i]
             if len(r_words) != len(output[i]):
