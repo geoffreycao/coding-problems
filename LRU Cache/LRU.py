@@ -54,7 +54,7 @@ class LRUCache:
         # print(self.d)
 
         
-    # Moves a node to the back of the linked list, which denotes it being recently used (not in danger of eviction)
+    # Moves a node to the back of the linked list, which denotes it being recently used
     def move_to_back(self, node: Node):        
         
         if node.left:
